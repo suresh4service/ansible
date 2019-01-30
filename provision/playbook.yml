@@ -3,6 +3,5 @@
   gather_facts: yes
   become: true
   roles:
-    - hello_web
     - docker
     - nginx

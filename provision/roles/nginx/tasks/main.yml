@@ -10,6 +10,6 @@
      state: build
 - name: Running the container
   docker_container:
+     name: nginx
      image: web:latest
-     path: docker_image
-     state: running
+     state: started
