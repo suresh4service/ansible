@@ -7,9 +7,11 @@
   docker_image:
      name: web
      path: docker_image
-     state: build
+     state: present
 - name: Running the container
   docker_container:
      name: nginx
      image: web:latest
+     ports:
+       - "8080:8080"
      state: started
